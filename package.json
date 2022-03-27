@@ -2,7 +2,7 @@
   "name": "Api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
@@ -11,30 +11,38 @@
     "eslint-fix": "eslint ./ --fix",
     "build": "webpack",
     "prod": "node dist/api.bundle.js",
-    "heroku-postbuild":"npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
     "body-parser": "^1.19.0",
+    "buffer": "^6.0.3",
     "cheerio": "^1.0.0-rc.3",
+    "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "html-webpack-plugin": "^5.5.0",
+    "https": "^1.0.0",
     "logger": "0.0.1",
     "multer": "^1.4.2",
     "mysql": "^2.18.1",
     "nodemailer": "^6.4.17",
     "nodemon": "^2.0.4",
     "request": "^2.88.2",
-    "serverless-http": "^2.6.0"
+    "serverless-http": "^2.6.0",
+    "tls": "0.0.1",
+    "util": "^0.12.4",
+    "webpack": "^5.70.0",
+    "webpack-merge": "^5.8.0"
   },
   "engines": {
     "node": "13.x"
   },
   "devDependencies": {
     "eslint": "^7.10.0",
-    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^2.9.7"
   }
