@@ -7,7 +7,7 @@ var jsonParser = bodyParser.json()
 router.post('/', jsonParser ,function (req, res) {
       var email = req.body.email,
        password = req.body.password;
-         var select =  `insert into signup values(email,password) values('dulhanjewellers@gmail.com','dulhan_1990')`;
+         var select =  `SELECT * FROM signup`;
     connection.query(select, function (error, results, fields) {
       if (error) throw error;
       if(results.length > 0)
